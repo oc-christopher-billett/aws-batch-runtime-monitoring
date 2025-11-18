@@ -73,14 +73,7 @@ aws autoscaling describe-auto-scaling-groups | \
 
 ### Requirements
 
-To run the serverless application you need to install the [SAM CLI](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html) and have Python 3.8 installed on your host. Python 3.7 can be used as well by modifying the `template.yaml` file and replace the Lambda functions runtime from `python3.8` to `python3.7`. You can quickly do this with the following `sed` command in the repository directory:
-
-
-```bash
-sed -i 's/3\.8/3\.7/g' template.yaml
-```
-
-If you plan to use [AWS CloudShell](https://aws.amazon.com/cloudshell/) to deploy the SAM template, please modify the Lambda runtime to `3.7` as suggested above (unless `3.8` is available) and make your Python 3 command the default for `python`: `alias python=/usr/bin/python3.7`. You can check the Python version available in CloudShell with `python3 --version`.
+To run the serverless application you need to install the [SAM CLI](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html) and have Python 3.13 installed on your host.
 
 ## References
 
